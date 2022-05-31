@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout.css" type="text/css">
+    <title>Laxmiprasad.io</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        /* Style the top navigation bar */
+        
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Column container */
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        
+        .main {
+            flex: 70%;
+            background-color: rgb(100, 100, 199);
+            padding: 20px;
+        }
+        /* Fake image, just for this example */
+        
+        .fakeimg {
+            background-color: rgb(179, 75, 75);
+            width: 100%;
+            padding: 0px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Top head -->
+    <div class="tophead">
+        <h3>Lax and family</h3>
+    </div>
+    <div class="header">
+        <h1>Website</h1>
+        <p>Author: Laxmi prasad joshi</p>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="#">Laxmi prasad joshi</a>
+        <a href="#">Sabin silwal</a>
+        <a href="#">Dipesh shahi</a>
+        <a style="float:inline-end " href="#">Bhoj raj mudhbari</a>
+    </div>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About us</h2>
+            <h5>Photo of us:</h5>
+            <img class="fakeimg" src="https://lh3.googleusercontent.com/7lzygPIwElUbHS5g8s4XOeHZ2THvsgdh7rLHRYXKpuEa5kaW_fjUIk7t2x0j0lxtEJkm82jhNq2Fdlhlf2rPHySw9ihqis6-7yNeOfEpT0_UMxxG7hT4qXcqFD0v1eACw8TSLNmUvRv-kMVQ36r_Ug7RF1S-TugoB0zyBfOdo4jnAsCMHJpvpCaiO6NNWwrB-kjNGzPFAWuxFrPbI1toizGZzhr3WEdLUxwG8ubknmYj2Z3A2_CU-lr5xyhFEKJAiQjR6C5bprNBZu2oYjPBmZjwjv71onx3bELLOmE8_N6qXpC02Mt1ZIOYGvEySbGu1HYZnYDt_IYO8G1bU4Uy4GoG_7TWmZbylFTq5AMpuSxVyF0-AaiHMGuJTR6KfOLd47ps2jXU_yYnNjVQsvcbc7mJg8uABHqxD_NrtCqxKO_BDm6hEp0DqWiiK52N7aay1A3-wPq4TjtDIZQ2h8eRT0iFDCL4KubY6MmiOMFgLK-17Gu-Wj14CMUIfbr6csKtKGdVULqnmlZXOroEdr3HxJXjDPtSDRAszj5iu80_JmGqPS0SLP15oTo9gruk8NlVo5RjeVbUB-WwlX3ibE__gIwhYLMJEPDIDLr28c3IKqofe9PzuKZjNEU324aRj-Eotrfrr7fSoZO3oKNyjJCw_iv6sLUiux2Te1fImfeHooXRugbzc5m-pIbrPyR9DvjR_K_aSxaTzbvMU6aaWOSehSEOD29sGPn1eMpjwxieHQqtjAZQNE3jA-oiHcE=w641-h854-no?authuser=0">
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, voluptatem sit. Modi dolor amet fugit! Quod labore ex optio ipsum quaerat doloremque repellendus dolorum, cumque nisi quia veritatis eos aspernatur! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ab placeat magnam distinctio ipsam aliquam unde nisi eveniet dolorum deleniti asperiores deserunt suscipit laborum, ut aperiam corporis veniam enim voluptatum perferendis</P>
+            <h3>Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eum sed? Voluptatibus, eos. Officiis odio architecto eligendi, quo molestias in corporis eaque recusandae debitis rerum, laboriosam ad incidunt aliquid quia.</p>
+            <img class="fakeimg" src="https://lh3.googleusercontent.com/jK0jW3rU0pwOrnaMbyK6l6VdZ_33an2LY8wHrJfwkgTz3MXd7F-p9kV4nwhzXjjayr05dWPtXTLKD3PPkzVHDhY1Gcdoiz714YbuGfJ0rj4TlXJAyckPSpUhcxO2SIqzDgJmzwT4LT_Dvm24QLz4Y4pHhbgAhq8ISpgcfnm4Qq0vOmpzKmPv5mu1qqSSHPd0HB6ploPDqH2pHuZil399hf554-AgmpV2kY_knjWSKkMJaoOHqZySqqi1W7igpaGPHdDAJHPBLK4p8_3wWO-uawcbUJ3aqLdkEeqxgH4JJFIPI5pGUR2N1xMV-B3T_68u6_ART8SUYldlKTBhGdj0_v0tdvl8EE7nXSf06eZA8AEjmoqvpFd19paSw0R8cBhO-216RP0GJuUGJZry8-5FdXtg_vJcafhO_guAIuuHLoUDl0mJ7dQkNCxhk9vtxqwEtB4k1_0m6AMeSIDswUMv_3fRBzEERj6LF5nyat0CXvzL6o2IjOU1UKZbNHXR7FqzHT14SCb-PNlb_A3vJWTsimv1djwRzxSOwnjWJSVHRPflXxvHPrjUKLsq2QPOZ_4PWZ2Zc2AU828-73e1yvxpHSPyEgE0yidgnnEUhiNYJtkkgu2tG9kdqaLdZ3S4m-O3ZJ3MC3EchAu05M3kBX3TYrJhAHrZLmlrSrsXhhe6jMDgTUaYqp1231seuJFIQoHzQTIfmFfP2p9ceQU2ExoljbgeRGjCqPBRyDtzXhX_guYsCLt6Z0o8WivZil4=w641-h854-no?authuser=0">
+            <img class="fakeimg" src="https://lh3.googleusercontent.com/tqLuySW7fNsKm5q8d6I_QnlZOf_MFLNXgt5iyFrTLX3qK99xd4E-NI8fvegozBjm4hD_oxzSguABg3oYV0flp-0hOh28bGAnfoYMRkQAUx7NSIvN6Tghem25LV5TemGfP6YuilMBTCzXQM0dGfInL47nMQpmNPN7SjOBDu35dluQJRBU__JlCvZOQEFeu2o5jx4C7u1NtVUvnVyxiN4Hv3oLpUX5WvJoLw4ECguoB1lQBpZ7kII8KOVhte-SfDUccdAwCIT198HPcBXoDIu2PwPwVatnb1eSaIsxboJ6ihFbzBZyec6eo5IoL4AKRfED0reODQAZO06hYmCIBj_-DQ_-1NpClvnMif14jcApDNRbb49PF3nwmYgAvXQIIaNIWQMLbZFr-AUE5mNcWtDxHkZrovyfRyUqXgaXT4jNv6kMv04rIKtEhpVENETVbjje53xl5U1JZL6LgBWH5P7ELyFQwYyMvO9Hj4GYZ7s6w52EpOEO-gB1sX7nB9UkJkmJDRGkcTKsTwWmZykj8Els1OrWwJs3_nolU7CvoqVy5iNpqqRddL8Udc_kdf82RlmpCKP7kd3NqgWfX1z59FHALAQTtVXJYQ-xt-WvliOqe7D1D4cugCSBr-D6dfY1Cvam_PcCL7SpdXeFqG-Nc-lSy7kW9M3q60v83tcLLNkyvp0lcmpqF4su-w0e1cBdfK7mqrT8LunxE5aUlw64sGK-1d1mfzrrCkB6_vKjv41ej5QxAARMEIVxoTDpmSk=w630-h839-no?authuser=0">
+            <img class="fakeimg" src="https://lh3.googleusercontent.com/XdoE2c0kWxkMyqSXuqCfWNN07SrJo-YRhdp3hhZVZTJbNnoXtRRp74T8QZpXzcsXz6Wd1KXiyWAb6Bv1duc-sbR03LEuY0iKXCjjPqNdaiRz_tPchMWBqyYf6zPb6pfopfQbGgtnXZRZ76IiYIEiCSMGEBsWwOUNNzey-as3ucDJA7BtubI4uGNQeAMHmXOnAIQxg7FQetNWlOgriCrggJSmj2yEBbs8EPqYpt165ziusi-NBH2EuxmnSPe35gZb4cEXnIm8CfJPRv6FM8vzSzWaAp--yC4NDYBRecVimBlGDE59nAtbmazkkO62s0sqx1eBRQrAmVuPlkrI3kCvxdDgR5yWl0SfdzEmxwjFiFeCfw5DVzCuL3VCnWSFbA9hHbnpCx8EIJM66V8vLFZaGpIfRPnc7Z9vu34J-trwbu6tSX0RafEqxBWjx0zl7gYFTEYzFHuMBnJQXSsRz6e9rOS-SeWAJlGQxu9aTRyZm_0431w59X8kCCqFsyBJgeiYWMc2SeE8LVucg0--_fw6Wrl9s4hCOjW6tYzNHLDqzcxG6xvUs5122w8K_yimUwXax1N6_quNxTNG-NRgTv9G_x0HuvH4wkIHG-nPn2n5TxjmRHvTD_3TryAai7Mrj_vLfPrPS6qSDTkaOlJQtbaKA47et_ZY9oaD5MAMoyFaLzO09G-Z588-cTJG-oos6qni0W-o8XD7zSETYH_H6qzKeYN2bXdLr5QQguBcbVoL7XdY9g8b-IXdomlNkG1M=w951-h465-no?authuser=0">
+
+        </div>
+        <div class="main">
+            <h2>Our journey</h2>
+            <h5>Burwood NSW 2134</h5>
+            <img class="fakeimg" src="https://lh3.googleusercontent.com/psZ2n5txaMKaXX010l0dQ-JAkkue28Of4gAvoxvm8fRMUhUrvhtQtDt5PMpJZgHjQbMNWz8IT7jiOwF8ah_NLungtOoKKAL8wVQXzbpCOREdZeGkY0XSSpenNMvoK9crg5kI4lvPJmIZU9RfSt04gecT5QUj9MUJYapc6iAz3hxi1MLw5uYe8lDyizNUZuCefT1ymmETeBR6PaFVwyev5WlHkJhUU4qz5DCpKpCO-lJouQw8xv94y7m1y2D2nLjmMXOjDOQKWyTRiUuZyJNlUvNAO2ztgXaZ7HgMcbUn2W6D0-e6MZVj3ld0f1dKN5f7yWsc4DP1BpvZRztvxZ7gWu318ABKPzghVCP9XxC7Q0Jq14N7EYT3flOAFQlqgr2N9Yx6ZvSMd34vtjeFQyqoNB2tOC9e0BKL_e3SpXrA4-LuC0MVKE_3GreIHbHHTLm9mLzRAeo2JzR2GzvQCI7L8nJRq3_Hn5cHwplPv-_fluUqxCbjVu-rVGfM9HXd00bNbSQxIGkGmaOuzkMjypGsHy2FOCVxXtOlUebmaqYQ-D_6zBTXhNHNZpB1fJeeVKkC-y7tpqPA2aJkbQKFZbCVyFBtaiaxH0-0eMuvP5u7VX7rQK1VlgL4G8Dbh00c39xcVa6gH_vr8_Qw_un0JhhWwwsua3IMdMiSZCcNKayhG6H273UcyhoeS7ACjTUDgc1P0oRRYg3sCkyFJtRVIiXC4M9yxiXD0bRXqcuwMTmF9qi6RW1bsuTgHVToAIOc=w410-h839-no?authuser=0">
+            <p>Australia Nepal Burwood</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+
+            <h2>Heading</h2>
+            <h5>Sabin car , Jun 16, 2022</h5>
+            <img class="fakeimg" src="https://cdn.pixabay.com/photo/2015/01/20/11/09/black-605334_1280.jpg">
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Thanks for living together</p>
+        <h3>The End</h3>
+    </div>
+
+
+</body>
+
+</html>
